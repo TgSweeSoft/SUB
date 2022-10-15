@@ -4,7 +4,7 @@ TG: SweeSoft
 
 # Установка:
 
-apt upgrade 
+apt upgrade
 apt update
 pkg upgrade
 pkg update
@@ -17,5 +17,5 @@ pip install -r requirements.txt
 python main.py
 
 Когда будете запускать во второй раз:
-$ cd SUB
-$ python main.py
+cd SUB
+python main.py
