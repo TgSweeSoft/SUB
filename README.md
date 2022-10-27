@@ -7,7 +7,7 @@ TG: [SweeSoft](http://t.me/SweeSoft)
 * apt update
 * pkg upgrade
 * pkg update
-* pkg install pip
+* apt install pip
 * pkg install git
 * pkg install python
 * git clone https://github.com/TgSweeSoft/SUB
