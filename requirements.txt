@@ -3,3 +3,4 @@ pyrogram
 colorama
 tgcrypto
 asyncio
+phonenumbers
