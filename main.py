@@ -2860,7 +2860,7 @@ def speed_tests(app, message):
         message.edit(SpeedTest.)
         speed(0.1)
         st1 += 1
-    app.send_message(message.chat.id, f'''download: {memoryconv.convsize(ds)}\nUpload: {memoryconv.convsize(us)}\nPing: {st.results.ping} ms)
+    app.send_message(message.chat.id, f'''download: {memoryconv.convsize(ds)}\nUpload: {memoryconv.convsize(us)}\nPing: {st.results.ping} ms)''')
 
 
 
