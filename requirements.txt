@@ -4,3 +4,4 @@ colorama
 tgcrypto
 asyncio
 phonenumbers
+speedtest-cli
