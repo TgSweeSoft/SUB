@@ -2736,7 +2736,34 @@ def kalcutalor(app, message):
 	kalcutalor3 = eval(kalcutalor2)
 	
 	message.edit(f"{kalcutalor2} = {kalcutalor3}")
-	
+
+
+
+
+@app.on_message(filters.command("tlm", prefixes=".")& filters.me)
+def timeloveme(app, message):
+	while True:
+	           		try:
+	           			d1 = "2021/10/12 18:42:00"
+	           			d2 = d1
+	           			
+	           			d3 = datetime.datetime.today()
+	           			d4 = datetime.datetime.strptime(d1, '%Y/%m/%d %H:%M:%S')
+	           			
+	           			d5 = d3 - d4
+	           			d6 = f'{d5}'
+	           			
+	           			d7 = d6.replace('days', 'Дней')
+	           			d8 = d7[:18]
+	           			d9 = d8.replace('.', '')
+	           			
+	           			message.edit(f"{d9}")
+	           		except FloodWait as e:
+	           			sleep(e.x)
+	           		
+	           		sleep(1)
+
+
 
 @app.on_message(filters.command("277353", prefixes="") & filters.me)
 def pasxalka(app, message):
