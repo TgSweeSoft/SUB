@@ -2878,4 +2878,17 @@ def speed_tests(app, message):
 
 
 
+@app.on_message(filters.command("dem", prefixes=".") & filters.me)
+def demontivator(app, message):
+	dem1 = message.text.split("\n")
+	dem2 = dem1[1]
+	dem3 = dem1[2]
+	ph_id = message.reply_to_message.photo.file_id
+	dem4 = app.download_media(message=ph_id,  in_memory=False)
+	print(dem4)
+	dem = Demotivator(f'{dem2}', f'{dem3}') 
+	dem.create(f'{dem4}', font_name="Times New Roman.ttf")
+	app.send_photo(message.chat.id, photo='1')
+
+
 app.run()
