@@ -6,7 +6,10 @@ from pyrogram.raw import functions
 from phonenumbers import timezone
 from phonenumbers import geocoder, carrier
 from pyrogram import Client, filters, sync, idle
-from simpledemotivators import Demotivatorimport os
+from simpledemotivators import Demotivator
+
+
+import os
 import time
 import random
 import asyncio
