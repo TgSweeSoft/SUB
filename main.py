@@ -6,8 +6,7 @@ from pyrogram.raw import functions
 from phonenumbers import timezone
 from phonenumbers import geocoder, carrier
 from pyrogram import Client, filters, sync, idle
-
-import os
+from simpledemotivators import Demotivatorimport os
 import time
 import random
 import asyncio
@@ -17,9 +16,9 @@ import pyrogram
 import speedtest
 import memoryconv
 import phonenumbers
-
-
+import simpledemotivators
 os.system("clear")
+
 app = Client('SUB', api_id=1016382, api_hash='c27834e5683d50a9bacf835a95ec4763')
 
 app.start()
