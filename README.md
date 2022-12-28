@@ -13,6 +13,7 @@ TG: [SweeSoft](http://t.me/SweeSoft)
 * git clone https://github.com/TgSweeSoft/SUB
 * cd SUB
 * pip install -r requirements.txt
+* LDFLAGS="-L/system/lib/" CFLAGS="-I/data/data/com.termux/files/usr/include/" pip install simpledemotivators
 * python main.py
 
 
@@ -25,5 +26,6 @@ TG: [SweeSoft](http://t.me/SweeSoft)
 * git clone https://github.com/TgSweeSoft/SUB
 * cd SUB
 * pip install -r requirements.txt
+* LDFLAGS="-L/system/lib/" CFLAGS="-I/data/data/com.termux/files/usr/include/" pip install simpledemotivators
 * python main.py
 
