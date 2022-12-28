@@ -2938,8 +2938,8 @@ def demontivator(app, message):
 	dem4 = app.download_media(message=ph_id,  in_memory=False)
 	print(dem4)
 	dem = Demotivator(f'{dem2}', f'{dem3}') 
-	dem.create(f'{dem4}', font_name="Times New Roman.ttf")
-	app.send_photo(message.chat.id, photo='demresult.jpg')
+	dem.create(f'{dem4}', font_name="/storage/emulated/0/SUB_SUB/SUB/Times New Roman.ttf")
+	app.send_photo(message.chat.id, photo='/storage/emulated/0/SUB_SUB/SUB/demresult.jpg')
 
 
 
