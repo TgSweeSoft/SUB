@@ -10,6 +10,9 @@ TG: [SweeSoft](http://t.me/SweeSoft)
 * apt install pip
 * pkg install git
 * pkg install python
+* cd /storage/emulated/0/
+* mkdir SUB_SUB
+* cd SUB_SUB
 * git clone https://github.com/TgSweeSoft/SUB
 * cd SUB
 * pip install -r requirements.txt
@@ -18,13 +21,13 @@ TG: [SweeSoft](http://t.me/SweeSoft)
 
 
 Когда будете запускать во второй раз:
-* cd SUB
+* cd /storage/emulated/0/SUB_SUB/SUB
 * python main.py
 
 # Обновить/переустановить:
-* rm -rf SUB
+* rm -rf /storage/emulated/0/SUB_SUB
 * git clone https://github.com/TgSweeSoft/SUB
-* cd SUB
+* cd /storage/emulated/0/SUB_SUB/SUB
 * pip install -r requirements.txt
 * LDFLAGS="-L/system/lib/" CFLAGS="-I/data/data/com.termux/files/usr/include/" pip install simpledemotivators
 * python main.py
