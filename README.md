@@ -26,6 +26,9 @@ TG: [SweeSoft](http://t.me/SweeSoft)
 
 # Обновить/переустановить:
 * rm -rf /storage/emulated/0/SUB_SUB
+* cd /storage/emulated/0
+* mkdir SUB_SUB
+* cd /storage/emulated/0/SUB_SUB
 * git clone https://github.com/TgSweeSoft/SUB
 * cd /storage/emulated/0/SUB_SUB/SUB
 * pip install -r requirements.txt
