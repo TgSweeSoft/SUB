@@ -3,20 +3,16 @@
 TG: [SweeSoft](http://t.me/SweeSoft)
 
 # Установка:
-* apt upgrade
-* apt update
-* pkg upgrade
-* pkg update
-* apt install pip
-* pkg install git
+* apt upgrade && apt update
+* pkg upgrade && pkg update
+* pkg install git && pkg install libjpeg-turbo
 * pkg install python
 * cd /storage/emulated/0/
-* mkdir SUB_SUB
-* cd SUB_SUB
+* mkdir SUB_SUB && cd SUB_SUB
 * git clone https://github.com/TgSweeSoft/SUB
 * cd SUB
 * pip install -r requirements.txt
-* LDFLAGS="-L/system/lib/" CFLAGS="-I/data/data/com.termux/files/usr/include/" pip install simpledemotivators
+* LDFLAGS="-L/system/lib64/" CFLAGS="-I/data/data/com.termux/files/usr/include/" pip install simpledemotivators
 * python main.py
 
 
@@ -32,6 +28,7 @@ TG: [SweeSoft](http://t.me/SweeSoft)
 * git clone https://github.com/TgSweeSoft/SUB
 * cd /storage/emulated/0/SUB_SUB/SUB
 * pip install -r requirements.txt
-* LDFLAGS="-L/system/lib/" CFLAGS="-I/data/data/com.termux/files/usr/include/" pip install simpledemotivators
+* pkg install libjpeg-turbo
+* LDFLAGS="-L/system/lib64/" CFLAGS="-I/data/data/com.termux/files/usr/include/" pip install simpledemotivators
 * python main.py
 
