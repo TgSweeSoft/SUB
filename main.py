@@ -14,7 +14,6 @@ import time
 import random
 import asyncio
 import datetime
-import colorama
 import pyrogram
 import speedtest
 import memoryconv
