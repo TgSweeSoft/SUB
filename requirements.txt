@@ -5,4 +5,4 @@ tgcrypto
 asyncio
 phonenumbers
 speedtest-cli
-simpledemotivators
+wheel
