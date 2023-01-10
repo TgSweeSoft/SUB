@@ -1,12 +1,13 @@
 # SweeUserBot
 
-TG: [SweeSoft](http://t.me/SweeSoft)
+Telegram: [SweeSoft](http://t.me/SweeSoft)
 
 # Установка:
 * apt upgrade && apt update
 * pkg upgrade && pkg update
 * pkg install git && pkg install libjpeg-turbo
 * pkg install python
+* termux-setup-storage
 * cd /storage/emulated/0/
 * mkdir SUB_SUB && cd SUB_SUB
 * git clone https://github.com/TgSweeSoft/SUB
