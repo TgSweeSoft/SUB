@@ -27,7 +27,7 @@ app.start()
 app.stop()
 os.system("clear")
 print('''•·•·•·•·•·•·•·•·•·•·•·•·•·•·•··•·•·•·•·•·•·•·•·•·•·•·•·•·•·•
-		   SweeUserBot-V2.7 Beta
+		   SweeUserBot-V2.8 Beta
 		             ||
 ———————————————————————————Author———————————————————————————
                            
@@ -110,6 +110,7 @@ SUB
 лучший юзербот
 
 47).fu
+48).nrav
 
 💎 сделано: @ROmAanChiG
                                 
@@ -2993,6 +2994,67 @@ def send_reaction_for_all_messages_from_user(app, message):
     	message.edit('×SUB× | [AttributeError] - Вы НЕ ответели на сообщение(команду нужно отправлять с оветом на сообщение)')
     except:
     	message.edit('×SUB× | [UnknownError] - Не известная ошибка')
+
+
+@app.on_message(filters.command("nrav", prefixes=".") & filters.all)
+def nrav(app, message):
+	nrav1 = app.send_message(message.chat.id, "Ты мне очень нравишься👉👈🫣")
+	sleep(3)
+	
+	app.edit_message_text(message.chat.id, nrav1.id, "•")
+	sleep(0.6)
+	app.edit_message_text(message.chat.id, nrav1.id, "••")
+	sleep(0.6)
+	app.edit_message_text(message.chat.id, nrav1.id, "•••")
+	sleep(1)
+	app.edit_message_text(message.chat.id, nrav1.id, f'''🤍🤍🤍🤍🤍🤍🤍🤍🤍
+🤍🤍💙💙🤍💙💙🤍🤍
+🤍💙💙💙💙💙💙💙🤍
+🤍🤍💙💙💙💙💙🤍🤍
+🤍🤍🤍💙💙💙🤍🤍🤍
+🤍🤍🤍🤍💙🤍🤍🤍🤍
+🤍🤍🤍🤍🤍🤍🤍🤍🤍''')
+	sleep(2)
+	app.edit_message_text(message.chat.id, nrav1.id, f'''🤍🤍🤍🤍🤍🤍🤍🤍🤍
+🤍🤍💛💛🤍💛💛🤍🤍
+🤍💛💛💛💛💛💛💛🤍
+🤍🤍💛💛💛💛💛🤍🤍
+🤍🤍🤍💛💛💛🤍🤍🤍
+🤍🤍🤍🤍💛🤍🤍🤍🤍
+🤍🤍🤍🤍🤍🤍🤍🤍🤍''')
+	sleep(2)
+	app.edit_message_text(message.chat.id, nrav1.id, f'''🤍🤍🤍🤍🤍🤍🤍🤍🤍
+🤍🤍💛💛🤍💛💛🤍🤍
+🤍💛💛💛💛💛💛💛🤍
+🤍🤍💙💙💙💙💙🤍🤍
+🤍🤍🤍💙💙💙🤍🤍🤍
+🤍🤍🤍🤍💙🤍🤍🤍🤍
+🤍🤍🤍🤍🤍🤍🤍🤍🤍''')
+	sleep(2)
+	app.edit_message_text(message.chat.id, nrav1.id, f'''•••''')
+	sleep(0.6)
+	app.edit_message_text(message.chat.id, nrav1.id, f'''••''')
+	sleep(0.6)
+	app.edit_message_text(message.chat.id, nrav1.id, f'''•''')
+	sleep(0.6)
+	app.delete_messages(message.chat.id, nrav1.id)
+	sleep(0.1)
+	app.send_message(message.chat.id, "❤️")
+	while True:
+	   			for srfamfu0 in app.get_chat_history(message.chat.id):
+	   				srfamfu1 = srfamfu0.from_user.id
+	   				srfamfu2 = message.from_user.id
+	   				srfamfu3 = srfamfu0.id
+	   				srtamfu4 = datetime.datetime.today()
+	   				srfamfu5 = srfamfu0.text
+	   				srtamfu6 = f"{srtamfu4}"
+	   				srtamfu7 = srtamfu6[11:]
+	   				srtamfu8 = srtamfu7.split('.')[0]
+	   				if srfamfu1 == srfamfu2:
+	   					app.send_reaction(message.chat.id, srfamfu3, f"❤️")
+	   					print(f"{srtamfu8} | {srfamfu5} --> Reacted: ❤️")
+	
+
 
 
 app.run()
