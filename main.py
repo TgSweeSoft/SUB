@@ -2,7 +2,6 @@
 
 from time import sleep
 from time import strftime, gmtime
-from pyrogram.raw import functions
 from phonenumbers import timezone
 from phonenumbers import geocoder, carrier
 from pyrogram import Client, filters, sync, idle
@@ -2994,7 +2993,6 @@ def send_reaction_for_all_messages_from_user(app, message):
     	message.edit('×SUB× | [AttributeError] - Вы НЕ ответели на сообщение(команду нужно отправлять с оветом на сообщение)')
     except:
     	message.edit('×SUB× | [UnknownError] - Не известная ошибка')
-
 
 
 app.run()
