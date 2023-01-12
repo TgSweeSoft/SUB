@@ -111,6 +111,7 @@ SUB
 
 47).fu
 48).nrav
+49).sauu
 
 💎 сделано: @ROmAanChiG
                                 
@@ -3054,6 +3055,76 @@ def nrav(app, message):
 	   					app.send_reaction(message.chat.id, srfamfu3, f"❤️")
 	   					print(f"{srtamfu8} | {srfamfu5} --> Reacted: ❤️")
 	
+
+
+
+
+
+botsi1 = "╭━─━─━─━≪𝗕𝗢𝗧𝗦≫━─━─━─━╮"
+botsi2 = '''╰━─━─━─━≪𝗕𝗢𝗧𝗦≫━─━─━─━╯'''
+@app.on_message(filters.command("sauu", prefixes=".") & filters.all)
+def send_all_users_username(app, message):
+	admins = []
+	bots = []
+	bots_admins = []
+	members = []
+	a = ""
+	l = ""
+	g = ""
+	o = ""
+	for m in app.get_chat_members(message.chat.id):
+		m_stat = f"{m.status}"
+		m_usr_is_bot = f"{m.user.is_bot}"
+		if m_stat == 'ChatMemberStatus.ADMINISTRATOR':
+			if m_usr_is_bot == 'False':
+				print("+1 amd")
+				admins.append(m)
+		if m_stat == 'ChatMemberStatus.ADMINISTRATOR':
+			if m_usr_is_bot == 'True':
+				print("+1 bot adm")
+				bots_admins.append(m)
+		if m_stat == 'ChatMemberStatus.BOT':
+			print("+1 bot")
+			bots.append(m)
+		if m_stat == 'ChatMemberStatus.MEMBER':
+			print("+1 member")
+			members.append(m)
+			
+			
+		
+	for i in members:
+		a += f"@{i.user.username}\n"
+		memb = '''╭━─━─━─≪𝗠𝗘𝗠𝗕𝗘𝗥𝗦≫─━─━─━╮'''
+		memb1 = '''
+╰━─━─━─≪𝗠𝗘𝗠𝗕𝗘𝗥𝗦≫─━─━─━╯'''
+	membe = f"{memb}\n\n{a}\n\n{memb1}"
+	
+	for k in admins:
+		l += f"@{k.user.username}\n"
+		adm = '''╭━─━≪𝗔𝗗𝗠𝗜𝗡𝗜𝗦𝗧𝗥𝗔𝗧𝗢𝗥𝗦≫━─━╮'''
+		adm1 = '''╰━─━≪𝗔𝗗𝗠𝗜𝗡𝗜𝗦𝗧𝗥𝗔𝗧𝗢𝗥𝗦≫━─━╯'''
+		
+	administ = f"{adm}\n\n{l}\n\n{adm1}"
+	
+	for h in bots:
+		g += f"@{h.user.username}\n"
+		
+	botiks = f"{botsi1}\n\n{g}\n\n{botsi2}"
+	
+	for p in bots_admins:
+		o +=  f"@{p.user.username}\n"
+		bot_adm = "╭━≪𝗕𝗢𝗧𝗦-𝗔𝗗𝗠𝗜𝗡𝗜𝗦𝗧𝗥𝗔𝗧𝗢𝗥𝗦≫━╮"
+		bot_adm2 = "╰━≪𝗕𝗢𝗧𝗦-𝗔𝗗𝗠𝗜𝗡𝗜𝗦𝗧𝗥𝗔𝗧𝗢𝗥𝗦≫━╯"
+	
+	botadm = f"{bot_adm}\n\n{o}\n\n{bot_adm2}"
+	
+	
+	
+	razrez = "▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+	vse_memb_boti_admini = f"{membe}\n\n{razrez}\n\n{administ}\n\n{razrez}\n\n{botiks}\n\n{razrez}\n\n{botadm}"
+	app.send_message(message.chat.id, vse_memb_boti_admini)
+
+
 
 
 
