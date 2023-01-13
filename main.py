@@ -3060,8 +3060,7 @@ def nrav(app, message):
 
 
 
-botsi1 = "╭━─━─━─━≪𝗕𝗢𝗧𝗦≫━─━─━─━╮"
-botsi2 = '''╰━─━─━─━≪𝗕𝗢𝗧𝗦≫━─━─━─━╯'''
+
 @app.on_message(filters.command("sauu", prefixes=".") & filters.all)
 def send_all_users_username(app, message):
 	admins = []
@@ -3072,6 +3071,18 @@ def send_all_users_username(app, message):
 	l = ""
 	g = ""
 	o = ""
+	botsi1 = "╭━─━─━─━≪𝗕𝗢𝗧𝗦≫━─━─━─━╮"
+	botsi2 = '''╰━─━─━─━≪𝗕𝗢𝗧𝗦≫━─━─━─━╯'''
+	memb = ""
+	memb1 = ""
+	membe = ""
+	adm = ""
+	adm1 = ""
+	administ = ""
+	botiks = ""
+	bot_adm = ""
+	bot_adm2 = ""
+	botadm = ""
 	for m in app.get_chat_members(message.chat.id):
 		m_stat = f"{m.status}"
 		m_usr_is_bot = f"{m.user.is_bot}"
