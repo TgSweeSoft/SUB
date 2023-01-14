@@ -2494,20 +2494,22 @@ def confess(app, message):
 ''')   
 
 
-
+.zaeb любой текст, количество сообщений, скорость в ms, @username
 @app.on_message(filters.command("zaeb", prefixes=".") & filters.me)
 def test(app, message):
-	orig_te1t = message.text.split(".zaeb ", maxsplit=1)[1]
+	orig_te1t1 = message.text.split(".zaeb ", maxsplit=1)
+	orig_te1t4 = orig_te1t1[1] # ))))
+	orig_te1t2 = orig_te1t1[2] # 100
+	orig_te1t3 = orig_te1t1[3] # 0.1
+	orig_te1t = orig_te1t1[4] #@username
 	user_text = orig_te1t
 	user_txt = user_text.replace("@", "")
+	orig_te1t22 = int(orig_te1t2)
+	orig_te1t33 = float(orig_te1t3)
 	message.delete(message.chat.id)
-	for i in range(50):
-		try:
-			app.send_message(message.chat.id, f"[бесим)](https://t.me/{user_txt})", disable_web_page_preview=True)
-		except FloodWait as e:
-			sleep(e.x)
-		
-		sleep(0.5)
+	for i in range(orig_te1t22):
+	    app.send_message(message.chat.id, f"[{orig_te1t4}](https://t.me/{user_txt})", disable_web_page_preview=True)
+	    sleep(orig_te1t33)
 
 
 
