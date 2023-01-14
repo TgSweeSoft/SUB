@@ -33,7 +33,7 @@ clear
 echo "installing libjpeg-turbo.."
 sleep 2
 clear
-pkg install libjpeg-turbo
+pkg install libjpeg-turbo -y
 clear
 echo "${BLUE}[${ORANGE}SUB${BLUE}] ${GREEN}Succeful${RED}: ${GREEN}installing libjpeg-turbo${WHITE}"
 sleep 3
@@ -42,7 +42,7 @@ clear
 echo "installing python.."
 sleep 2
 clear
-pkg install python 
+pkg install python -y
 clear
 echo "${BLUE}[${ORANGE}SUB${BLUE}] ${GREEN}Succeful${RED}: ${GREEN}installing ${BLUE}pyt${ORANGE}hon${GREEN}${WHITE}"
 sleep 3
