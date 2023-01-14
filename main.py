@@ -20,7 +20,10 @@ import phonenumbers
 import simpledemotivators
 os.system("clear")
 
-app = Client('SUB', api_id=1016382, api_hash='c27834e5683d50a9bacf835a95ec4763')
+openacc = open('r+', "account.txt")
+readacc = openacc.read()
+
+app = Client(f'{readacc}', api_id=1016382, api_hash='c27834e5683d50a9bacf835a95ec4763')
 
 app.start()
 
