@@ -2538,7 +2538,8 @@ def export_sesion_string(app, message):
 def fancy_text(app, message):
     message.delete(message.chat.id)
     or_ft = message.text.split(".ft ", maxsplit=1)[1]
-    ft = or_ft
+    ft0 = or_ft
+    ft = ft0.replace("SUB","SweeUserBot"
     ft1 = ft.replace("А","Ꭺ")
     ft2 = ft1.replace("Б","Ꮾ")
     ft3 = ft2.replace("В","Ᏼ")
@@ -2664,8 +2665,7 @@ def fancy_text(app, message):
     ft123 = ft122.replace("8","𝟾")
     ft124 = ft123.replace("9","𝟿")
     ft125 = ft124.replace("0","𝟶")
-    ft126 = ft125.replace("SUB","SweeUserBot")
-    app.send_message(message.chat.id, f"{ft126}")
+    app.send_message(message.chat.id, f"{ft125}")
 
 
 @app.on_message(filters.command("or", prefixes=".") & filters.me)
