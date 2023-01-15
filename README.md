@@ -5,6 +5,7 @@ Telegram Channel: [SweeSoft](http://t.me/SweeSoft)
 
 # Установка:
 * termux-setup-storage
+* cd /storage/emulated/0
 * pkg install git && git clone https://github.com/TgSweeSoft/SUB && cd SUB && chmod +x install.sh && bash install.sh
 * 
 Запуск:
