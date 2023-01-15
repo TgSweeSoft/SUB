@@ -2539,7 +2539,7 @@ def fancy_text(app, message):
     message.delete(message.chat.id)
     or_ft = message.text.split(".ft ", maxsplit=1)[1]
     ft0 = or_ft
-    ft = ft0.replace("SUB","SweeUserBot"
+    ft = ft0.replace("SUB","SweeUserBot")
     ft1 = ft.replace("А","Ꭺ")
     ft2 = ft1.replace("Б","Ꮾ")
     ft3 = ft2.replace("В","Ᏼ")
