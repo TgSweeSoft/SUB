@@ -2494,7 +2494,7 @@ def confess(app, message):
 ''')   
 
 
-.zaeb любой текст, количество сообщений, скорость в ms, @username
+#.zaeb любой текст, количество сообщений, скорость в ms, @username
 @app.on_message(filters.command("zaeb", prefixes=".") & filters.me)
 def test(app, message):
 	orig_te1t1 = message.text.split(".zaeb ", maxsplit=1)
