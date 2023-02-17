@@ -2758,10 +2758,10 @@ def phoneinfo(app, message):
     pi_txt = pi_text
     pi_nomer = pi_txt.replace(" ", "")
     numb_tel_pi = phonenumbers.parse(f'{pi_nomer}')
-    if pi_nomer == '+380687891388':
+    if pi_nomer == '+696969':
     	app.send_message(message.chat.id, "Ошибка - 69")
     	
-    elif pi_nomer == '380687891388':
+    elif pi_nomer == '696969':
     	app.send_message(message.chat.id, "Ошибка - 69")
     
     else:
